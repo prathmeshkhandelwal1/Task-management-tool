@@ -2,6 +2,12 @@
   text-align: center;
 }
 
+@media only screen and (max-width:700px){
+  .App{
+    overflow-x: auto;
+  }
+}
+
 .react-kanban-board{
   border-radius: 20px;
 }

@@ -50,8 +50,8 @@ const board = {
         },
         {
           id: 11,
-          title: "Card title 11",
-          description: "Card content"
+          title: "Test!",
+          description: "Test the app before launching!"
         }
       ]
     }
