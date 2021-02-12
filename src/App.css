@@ -2,37 +2,143 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.react-kanban-board{
+  border-radius: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.react-kanban-card{
+  border-radius: 10px;
+  height: 150px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+  background-color: #eabf9f;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.react-kanban-card:hover{
+  transform: rotate(5deg);
+}
+
+.react-kanban-card__description{
+  background-color: #eabf9f;
+  height: 100px;
+  border-radius: 0 0 5px 5px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+
+.react-kanban-column{
+  width: 300px;
+  border-radius: 10px;
+  background-color: #1e212d;
+}
+
+.react-kanban-card-adder-button{
+  border: black 1px solid;
+  border-radius: 15px;
+  background-color: #eabf9f;
+  width: 10%;
+}
+
+.boardhead{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: black;
+  font-weight: 500;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0;
+  transition: all .3s;
+}
+
+.boardhead:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.react-kanban-card__title{
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #b68973;
+  border-radius: 5px 5px 0 0;
+}
+
+.react-kanban-card-adder-button:hover{
+  background-color: #b68973;
+  /* color: white; */
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+.react-kanban-card-adder-form{
+  /* background-color: #cfdac8;
+   */
+   background-color: #eabf9f;
+  display: inherit;
+  padding: 0;
+  height: auto;
+}
+
+.react-kanban-card-adder-form__button{
+  border-radius: 10px;
+  background-color: #b68973;
+
+  width: 100px;
+  margin: 5px;
+  margin-bottom: 10px;
+}
+
+.react-kanban-card-adder-form__button:hover{
+  background-color: #eabf9f;
+}
+
+.react-kanban-card-adder-form__title{
+  background-color: #b68973;
+  box-sizing: border-box;
+  padding: 10px;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.react-kanban-card-adder-form__description{
+  background-color: #eabf9f;
+  width: 90%;
+}
+
+.react-kanban-column-header{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  /* display: flex; */
+  color: #e8eae6;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+/* .board{
+  display: flex;
+  flex-flow: column;
+} */
+
+.head{
   color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+  width: 30%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.head:hover{
+  color: #7c9473;
 }

@@ -1,0 +1,48 @@
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.head1{
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #b68973;
+    /* border-radius: 2px; */
+}
+
+.navlogoContainer{
+    padding: 10px;
+}
+.navlogo{
+    padding: 15px;
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+ /* font-size: 36px; */
+
+.listcontainer{
+    width: 20%;
+    display: flex;
+    
+}
+.list{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+    width: 100%;
+}
+
+.listitem{
+    color: black;
+    font-family: inherit;
+    font-size: 20px;
+    transition: all 0.3s;
+}
